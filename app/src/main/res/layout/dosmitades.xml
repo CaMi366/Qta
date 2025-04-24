@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".DosMitadesActivity">
+
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dos mitades"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/textViewSaludo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hola"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/textViewInstrucciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Te voy a ayudar a solucionar el problema de las 2 mitades.\n\n1. Ingresa una cadena de caracteres.\n2. Te ayudaré a cortar la cadena en dos partes (iguales) (si la longitud de la cadena es impar, colocaré el carácter central en la primera cadena, de modo que la primera cadena contenga un carácter más que la segunda).\n3. Luego imprimiré la nueva cadena en una sola fila con la primera y la segunda mitad intercambiadas (la segunda mitad es la primera y la primera mitad es la segunda)."
+        android:layout_marginBottom="16dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa una cadena de caracteres">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextCadena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/botonSolucionar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Solucionar"
+        android:backgroundTint="#00C88C"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textViewError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textViewResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center_horizontal"
+        android:text="" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="32dp">
+
+        <Button
+            android:id="@+id/botonDosMitadesInferior"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#00C88C"
+            android:text="Dos mitades" />
+
+        <Button
+            android:id="@+id/botonDosPalabrasInferior"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#00C88C"
+            android:text="Dos palabras" />
+
+        <Button
+            android:id="@+id/botonQuitarFragmentoInferior"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#00C88C"
+            android:text="Quitar fragmento" />
+
+    </LinearLayout>
+
+</LinearLayout>

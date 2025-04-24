@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <!-- Imagen ilustrativa -->
+    <ImageView
+        android:id="@+id/illustration"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/inicio"
+        android:contentDescription="Coding Illustration"
+        android:scaleType="centerCrop" />
+
+
+    <!-- Botón Iniciar sesión -->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar sesión"
+        android:backgroundTint="#00C88C"
+        android:textColor="@android:color/white" />
+</LinearLayout>
